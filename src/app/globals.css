@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #121212;
+  --background: #0a0a14;
   --foreground: #ededed;
 }
 
@@ -21,13 +21,12 @@
 html {
   scroll-behavior: auto;
   overflow-x: hidden;
-  /* Hide scrollbar so page appears non-scrollable */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 html::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
 }
 
 body {
@@ -39,26 +38,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Selection color */
+/* Selection */
 ::selection {
-  background: rgba(255, 107, 53, 0.3);
+  background: rgba(212, 175, 55, 0.35);
   color: #fff;
 }
 
-/* Value letters on road */
-.value-letter {
-  color: #111;
-  opacity: 0;
+/* Sparkle twinkle animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; transform: scale(0.8); }
+  50%      { opacity: 1;   transform: scale(1.2); }
 }
 
-/* Section transitions */
-.section-fade {
-  opacity: 0;
-  transform: translateY(60px);
+.animate-twinkle {
+  animation: twinkle 2s ease-in-out infinite alternate;
 }
 
 /* Smooth focus outlines */
 *:focus-visible {
-  outline: 2px solid rgba(255, 107, 53, 0.5);
+  outline: 2px solid rgba(212, 175, 55, 0.5);
   outline-offset: 2px;
 }

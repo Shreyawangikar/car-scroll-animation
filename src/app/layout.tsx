@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Car Scroll Animation | ITZFIZZ",
+  title: "Grand Inauguration | ITZFIZZ",
   description:
-    "Scroll-driven hero section animation with smooth car interactions",
+    "Scroll-driven grand inauguration animation with dramatic reveals",
 };
 
 export default function RootLayout({

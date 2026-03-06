@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: "/car-scroll-animation",
-  assetPrefix: "/car-scroll-animation/",
+  basePath: "/welcome-to-itzfizz",
+  assetPrefix: "/welcome-to-itzfizz/",
 };
 
 export default nextConfig;

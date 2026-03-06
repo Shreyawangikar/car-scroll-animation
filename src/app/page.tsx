@@ -1,17 +1,13 @@
 import Preloader from "@/components/Preloader";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import ScrollContent from "@/components/ScrollContent";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="relative bg-[#121212]">
+    <main className="relative bg-[#121212] overflow-x-hidden">
       <Preloader />
       <Navbar />
       <HeroSection />
-      <ScrollContent />
-      <Footer />
     </main>
   );
 }

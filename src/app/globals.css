@@ -21,6 +21,13 @@
 html {
   scroll-behavior: auto;
   overflow-x: hidden;
+  /* Hide scrollbar so page appears non-scrollable */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
 }
 
 body {
@@ -36,24 +43,6 @@ body {
 ::selection {
   background: rgba(255, 107, 53, 0.3);
   color: #fff;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #050505;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #333, #222);
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #555, #333);
 }
 
 /* Value letters on road */
